@@ -1,0 +1,10 @@
+window-padding-x=8
+window-padding-y=4
+window-padding-balance=true
+cursor-style=block
+cursor-style-blink=true
+
+font-family=PragmataProMonoLiga Nerd Font
+font-size=12
+
+theme=gruber-darker

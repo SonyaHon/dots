@@ -1,0 +1,5 @@
+.emacs.d/auto-save-list/
+.emacs.d/eln-cache/
+.emacs.d/elpaca/
+.emacs.d/transient/
+.config/tmux/plugins
