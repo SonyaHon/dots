@@ -30,8 +30,10 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 ### Envs
-GUI_EDITOR="emacs"
-EDITOR="vim"
+export GUI_EDITOR="emacs"
+export EDITOR="vim"
+gexport BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 ### Functions
 function reload.zsh {
@@ -84,5 +86,7 @@ eval "$(zoxide init --cmd cd zsh)"
 
 ### AutoCompletions Configuration
 fpath=(${ASDF_DIR}/completions $fpath)
+[ -s "/Users/sonyahon/.bun/_bun" ] && source "/Users/sonyahon/.bun/_bun"
+
 autoload -U compinit && compinit
 
