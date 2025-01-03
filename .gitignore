@@ -2,4 +2,6 @@
 .emacs.d/eln-cache/
 .emacs.d/elpaca/
 .emacs.d/transient/
+.emacs.d/projects
+.emacs.d/tree-sitter/
 .config/tmux/plugins

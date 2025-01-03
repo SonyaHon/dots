@@ -99,6 +99,28 @@
   :ensure t)
 
 (use-package apheleia
-  :ensure t)
+  :ensure t
+  :custom
+  ;; standard clj
+  (push '(standard-clj . ("standard-clj" "fix" "-")) apheleia-formatters)
+  (add-to-list 'apheleia-mode-alist '(emacs-lisp-mode . standard-clj))
+  :init
+  (apheleia-global-mode 1))
+
+(use-package paredit
+  :ensure t
+  :hook ((emacs-lisp-mode . paredit-mode)))
+
+(use-package exec-path-from-shell
+  :ensure t
+  :init
+  (exec-path-from-shell-initialize))
+
+(use-package eglot
+  :ensure nil
+  :hook
+  ((typescript-ts-mode . eglot-ensure))
+  :custom
+  (eglot-autoshutdown t))
 
 (provide 'plugs)

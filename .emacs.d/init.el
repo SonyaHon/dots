@@ -5,11 +5,11 @@
 (require 'elpaca)
 (require 'themes)
 (require 'plugs)
+(require 'lang)
 
 (add-hook 'elpaca-after-init-hook
 	  (lambda ()
 	    (load-theme 'gruber-darker t)
 	    (set-face-attribute 'default nil
-		    :family "PragmataProMonoLiga Nerd Font")))
-
+				:family "PragmataProMonoLiga Nerd Font")))
 
