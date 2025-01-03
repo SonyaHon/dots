@@ -32,7 +32,7 @@ zinit light-mode for \
 ### Envs
 export GUI_EDITOR="emacs"
 export EDITOR="vim"
-gexport BUN_INSTALL="$HOME/.bun"
+export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 ### Functions

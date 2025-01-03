@@ -4,4 +4,5 @@ install.sh
 .emacs.d/eln-cache/
 .emacs.d/elpaca/
 .emacs.d/transient/
+fonts/
 
